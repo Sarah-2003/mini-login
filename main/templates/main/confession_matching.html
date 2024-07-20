@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confession Matching | MatchRight.ai</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MatchRight.ai</div>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="{% url 'features' %}">Features</a></li>
+                <li><a href="{% url 'register' %}">Sign Up</a></li>
+                <li><a href="{% url 'login' %}">Log In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="confession-matching-section">
+            <h1>Confession Matching</h1>
+            <div class="confession-matching-container">
+                <p>Discreetly express your interest and find mutual connections.</p>
+                <h2>How It Works</h2>
+                <ul>
+                    <li>Users can anonymously express their interest in another person.</li>
+                    <li>If the other person reciprocates, both parties are notified of the mutual interest.</li>
+                    <li>If the interest is not reciprocated, the confession remains confidential.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="{% url 'features' %}">Features</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect with Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>support@matchright.ai</p>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2023 MatchRight.ai. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
